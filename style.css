@@ -1,0 +1,75 @@
+body
+{
+    background-color: gray;
+    font-family: 'segoe ui light';
+}
+
+.master
+{
+    background-color: #09c;
+    width: 25%;
+    height: 250px;
+    border: solid 2px #fff;
+    position: relative;
+    top: 200px;
+    left: 200px;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    
+}
+.info
+{
+    background-color: rgba(42,63,85,0.7);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s;
+
+}
+.master:hover .info
+{
+    opacity: 1;
+    transform: rotate(360deg);
+}
+img
+{
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    transition-delay: 1s;
+}
+.master:hover img
+{
+    transform: scale(1.2 , 1.2);
+}
+.master h1
+{
+    background-color: #2A3F55;
+    margin-top: 0px;
+    height: 50px;
+    padding-top: 10px;
+    position: relative;
+    left: 100%;
+    transition: all 1s;
+    transition-delay: 1.5s;
+}
+.master:hover h1
+{
+    left: 0;
+}
+.master p
+{
+    padding: 20px;
+    font-size: 20px;
+    position: relative;
+    left: 100%;
+    transition: all 1s;
+    transition-delay: 2s;
+}
+.master:hover p
+{
+    left: 0;
+}
